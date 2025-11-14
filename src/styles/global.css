@@ -3,7 +3,7 @@
 @plugin "daisyui";
 
 @theme {
-  --default-font-family: "Inter", var(--font-sans);
+  --default-font-family: "Geist", var(--font-sans);
 }
 
 @layer components {
