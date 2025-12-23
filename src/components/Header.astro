@@ -5,7 +5,7 @@ import { header } from "../consts.ts";
 const base = import.meta.env.BASE_URL;
 const navItems = [
   { href: `${base}`, label: "About" },
-  { href: `${base}/projects/`, label: "Projects" },
+  { href: `${base}projects/`, label: "Projects" },
 ];
 
 const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, "");
