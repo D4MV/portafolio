@@ -13,7 +13,7 @@ import LucideIcon from "../components/LucideIcon.astro";
     <Image
       src={about.profilePic}
       alt="Profile Picture"
-      class="mx-auto my-4 w-32 rounded-full"
+      class="mx-auto my-4 w-50 rounded"
     />
     <p set:html={about.description} class="text-base-content/80" />
     <div class="my-4 flex gap-2">
@@ -35,17 +35,17 @@ import LucideIcon from "../components/LucideIcon.astro";
         class="btn btn-primary sm:flex-1"
         href={about.resumeHref}
         target="_blank"
-        >Open Resume<SquareArrowOutUpRight size="1rem" />
+        >Mi Currículum<SquareArrowOutUpRight size="1rem" />
       </a>
       <a class="btn btn-soft btn-accent sm:flex-1" href="/projects"
-        >My Projects</a
+        >Mis Proyectos</a
       >
     </div>
   </section>
 
   <section class="mt-10">
     <h2>
-      <span class="fancy-highlight">Work Experience</span>
+      <span class="fancy-highlight">Experiencia Laboral</span>
     </h2>
     <div class="mt-2 flex flex-col gap-6">
       {
@@ -63,7 +63,7 @@ import LucideIcon from "../components/LucideIcon.astro";
 
   <section class="mt-10">
     <h2>
-      <span class="fancy-highlight">Education</span>
+      <span class="fancy-highlight">Educación</span>
     </h2>
     <div class="mt-2 flex flex-col gap-6">
       {
@@ -81,7 +81,7 @@ import LucideIcon from "../components/LucideIcon.astro";
 
   <section class="mt-10">
     <h2>
-      <span class="fancy-highlight">Get In Touch</span>
+      <span class="fancy-highlight">Contacto</span>
     </h2>
     <div class="mt-2">
       <p set:html={about.getInTouch} class="text-base-content/80" />

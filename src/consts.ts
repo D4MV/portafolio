@@ -1,119 +1,101 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-import type { Header, Footer, About, Project } from "./types.ts";
+import type { Header, About, Project } from "./types.ts";
 
 import ProfilePic from "./assets/profile-pic.jpg";
 
-import PenweaveImage from "./assets/projects/penweave.png";
-import MGUScraperImage from "./assets/projects/mguscraper.png";
-import FlashifyImage from "./assets/projects/flashify.png";
-import WeatherifyImage from "./assets/projects/weatherify.png";
+import ladder from "./assets/projects/ladder.png";
+import stethoscope from "./assets/projects/stethoscope.png"
+import mapping from "./assets/projects/mapping.png"
 
-export const SITE_URL: string = "https://shonebinu.com";
+export const SITE_URL = "https://D4MV.github.io/portfolio";
 
 export const meta = {
   about: {
-    // index page
-    title: "Shone Binu",
+
+    title: "Diego Moraga",
     description:
-      "Hi, I'm Shone Binu, a software engineer. Welcome to my little corner of the internet!",
+      "Hola! Soy Diego Moraga, un Analista Programador y Desarrollador Full Stack apasionado por crear soluciones tecnológicas innovadoras.",
   },
   projects: {
-    title: "Projects | Shone Binu",
+    title: "Projects | Diego Moraga",
     description:
-      "Here are some of my projects — things I’ve built, experimented with, and had fun creating.",
+      "Aquí están algunos de mis proyectos — cosas que he construido, experimentado y disfrutado crear.",
   },
-  blog: {
-    title: "Blog | Shone Binu",
-    description:
-      "This is my blog — a place where I share thoughts, ideas, and things I’m learning along the way.",
-  },
-  // blog post title and description are taken from the variables in markdown file
+
 };
 
-export const header: Header = { logoTitle: "SB" };
+export const header: Header = { logoTitle: "DM" };
 
-export const footer: Footer = {
-  // parses html
-  content:
-    "Made with ❤️ by Shone Binu • <a href='https://github.com/shonebinu/portfolio' class='link'>Source Code</a>",
-};
 
 export const about: About = {
-  // parses html
-  headLine: "Hi, I'm <span class='fancy-highlight'>Shone Binu</span>",
-  tagLine: "Software Engineer / Full Stack Developer",
+
+  headLine: "Hola, soy <span class='fancy-highlight'>Diego Moraga</span>",
+  tagLine: "Analista Programador / Desarrollador Full Stack",
   profilePic: ProfilePic,
-  // parses html
+
   description:
-    "I’m a recent <u>Software Engineer</u> graduate from India 🇮🇳 who likes to keep tackling new problems. Currently, I’m working on the <u>React and Node.js</u> side of things. Outside of this, I work on improving myself in whatever I see fit.",
+    "Soy un titulado de <u>Analista Programador</u> graduado de Inacap y egresado de <u>Ingeniería en Informatica</u> interesado en buscar nuevos problemas que resolver. Actualmente, me enfoco en el desarrollo de soluciones con <u>React y NestJs</u>. Además, me encuentro reliazando cursos para certificaciones de AWS y Azure, buscando ser un mejor profesional. ",
   links: [
-    // Lucide icons
-    { icon: "Github", href: "https://github.com/shonebinu/" },
-    { icon: "Linkedin", href: "https://www.linkedin.com/in/shonebinu/" },
-    { icon: "Youtube", href: "https://www.youtube.com/@shone_binu" },
+
+    { icon: "Github", href: "https://github.com/D4MV" },
+    { icon: "Linkedin", href: "https://www.linkedin.com/in/diego-moraga-valdes-44a962295" },
   ],
   resumeHref:
-    "https://drive.google.com/file/d/10dfGCIiX2b7Wf-Lj51ypt3UHgPiPQ3ZV/view?usp=sharing",
+    "https://drive.google.com/file/d/11oKbN5sCUS2NXVw18H7X1FyANqkYgs3W/view?usp=sharing",
   workExperience: [
     {
-      title: "Full Stack Developer Intern",
-      timeline: "May 2024 - Oct 2024",
-      company: "Rabbitsquare • India",
+      title: "Soporte TI ",
+      timeline: "Abril 2025 - Actual 2025",
+      company: "INACAP ",
       description:
-        "Developed a LAMP stack web solution for a Civil Service academy, including a customizable public website, management portal, user portal, and exam result publishing system.",
+        "Soporte TI a usuarios internos, resolución de incidentes.",
     },
   ],
   education: [
     {
-      title: "Bachelor of Computer Application",
-      timeline: "Jun 2022 - Apr 2025",
-      institution: "Nirmala College Muvattupuzha • India",
+      title: "Analista Programador",
+      timeline: "Marzo 2021 - Diciembre 2023",
+      institution: "INACAP",
       description:
-        "Studied core computer science fundamentals including programming languages, data structures, algorithms, operating systems, and networking, with practical experience in Java, C/C++, JavaScript, PHP, and Linux.",
+        "Estudié los fundamentos básicos de la informática, incluidos lenguajes de programación, estructuras de datos, algoritmos, sistemas operativos y redes, con experiencia práctica en python, TypeScript y Linux.",
     },
+    {
+      title: "Ingeniería en Informática (En curso)",
+      timeline: "Enero 2024 - Presente",
+      institution: "INACAP",
+      description:
+        "Actualmente cursando la carrera de Ingeniería en Informática en INACAP, profundizando en diversas áreas, cómo ciencia de datos, tecnologías cloud y desarrollo de software.",
+    }
   ],
-  // parses html
   getInTouch:
-    "Drop me an email at <a href='mailto:mail@shonebinu.com' class='primary-underline'>mail@shonebinu.com</a> or connect with me on one of my socials.",
+    "Puedes contactarme al correo <a href='mailto:diego.moragavaldes2002@gmail.com'>diego.moragavaldes2002@gmail.com</a> o conectarte conmigo en alguna de mis redes sociales.",
 };
 
 export const projects: Project[] = [
   {
-    logoImage: PenweaveImage,
-    title: "Penweave",
-    techs: ["React", "Supabase", "daisyUI"],
+    logoImage: ladder,
+    title: "Landing Page Tricahue",
+    techs: ["Astro", "TailwindCSS", "Cloudflare Pages", "git-hub"],
     description:
-      "Penweave is a CodePen‑like tool that lets users run their HTML/CSS/JS in a browser environment with secure preview and sharing.",
-    sourceHref: "https://github.com/shonebinu/penweave/",
+      "Landing page para Tricahue, una empresa dedicada al arriendo de escaleras en Chile.",
+      liveHref:"https://tricahue.com/",
   },
   {
-    logoImage: MGUScraperImage,
-    title: "MGU Scraper",
-    techs: ["Python", "Streamlit", "Beautiful Soup"],
+    logoImage: stethoscope,
+    title: "MediApp",
+    techs: ["React+vite", "Nestjs", "Prisma", "AWS", "PostgreSQL"],
     description:
-      "MGU Scraper is a tool designed to simplify the extraction and analysis of bulk student exam results from MGU Kottayam University.",
-    sourceHref: "https://github.com/shonebinu/MGUScraper",
-    liveHref: "https://mguscraper.streamlit.app/",
+      "Sitema de reserva de horas médicas con enfoque SaaS, permitiendo a clinicas y doctores independientes gestionar sus agendas y citas médicas de manera eficiente.",
+    sourceHref: "git@github.com:D4MV/proyectoIntegracion-Front.git",
+    liveHref: "",
   },
   {
-    logoImage: FlashifyImage,
-    title: "Flashify",
-    techs: ["PHP", "MySQL", "LAMP"],
+    logoImage: mapping,
+    title: "Terratrack",
+    techs: ["React+vite", "Nestjs", "Prisma", "AZURE", "PostgreSQL", "Google Maps API"],
     description:
-      "Flashify is a minimal, beautiful, and responsive web-based flashcard application built using the LAMP stack.",
-    sourceHref: "https://github.com/shonebinu/flashify",
-    liveHref: "https://flashify.shonebinu.com/",
-  },
-  {
-    logoImage: WeatherifyImage,
-    title: "Weatherify",
-    techs: ["Javascript", "Webpack"],
-    description:
-      "Weather app featuring glassmorphism design, powered by weatherapi.com.",
-    sourceHref: "https://github.com/shonebinu/weatherify",
-    liveHref: "https://shonebinu.github.io/weatherify/",
+      "Sistema de diseño de huertos y Gestión agrícola para optimizar el uso de terrenos y las tareas administrativas.",
+    sourceHref: "https://github.com/D4MV/front-end_terratrack",
+    liveHref: "",
   },
 ];
 
-// add blog articles in /src/content/blog
