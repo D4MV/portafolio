@@ -2,9 +2,10 @@
 import ThemeSwitch from "./ThemeSwitch.astro";
 import { header } from "../consts.ts";
 
+const base = import.meta.env.BASE_URL;
 const navItems = [
-  { href: "/", label: "About" },
-  { href: "/projects", label: "Projects" },
+  { href: `${base}`, label: "About" },
+  { href: `${base}projects`, label: "Projects" },
 ];
 
 const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, "");
@@ -14,7 +15,7 @@ const subpath = pathname.match(/[^\/]+/g);
 <header
   class="bg-base-300/30 sticky top-0 z-10 flex items-center justify-between p-4 backdrop-blur-md"
 >
-  <h2><a href="/">{header.logoTitle}</a></h2>
+  <h2><a href={base}>{header.logoTitle}</a></h2>
 
   <nav class="flex gap-4">
     {
