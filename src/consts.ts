@@ -6,7 +6,7 @@ import ladder from "./assets/projects/ladder.png";
 import stethoscope from "./assets/projects/stethoscope.png"
 import mapping from "./assets/projects/mapping.png"
 
-export const SITE_URL = "https://D4MV.github.io/portfolio";
+export const SITE_URL = "https://D4MV.github.io/portfolio/";
 
 export const meta = {
   about: {
