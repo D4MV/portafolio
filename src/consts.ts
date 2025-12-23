@@ -85,7 +85,7 @@ export const projects: Project[] = [
     techs: ["React+vite", "Nestjs", "Prisma", "AWS", "PostgreSQL"],
     description:
       "Sitema de reserva de horas médicas con enfoque SaaS, permitiendo a clinicas y doctores independientes gestionar sus agendas y citas médicas de manera eficiente.",
-    sourceHref: "git@github.com:D4MV/proyectoIntegracion-Front.git",
+    sourceHref: "https://github.com/D4MV/proyectoIntegracion-Front",
     liveHref: "",
   },
   {
