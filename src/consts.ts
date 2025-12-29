@@ -39,7 +39,7 @@ export const about: About = {
     { icon: "Github", href: "https://github.com/D4MV" },
     { icon: "Linkedin", href: "https://www.linkedin.com/in/diego-moraga-valdes-44a962295" },
   ],
-  resumeHref: "/cv.pdf",
+  resumeHref: "/portafolio/cv.pdf",
   workExperience: [
     {
       title: "Soporte TI ",
